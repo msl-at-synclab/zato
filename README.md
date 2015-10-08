@@ -39,7 +39,7 @@ Sulla documentazione ufficiale si può trovare [un tutorial piuttosto dettagliat
 Seguendo questo tutorial si possono incontrare alcune difficoltà. Di seguito viene spiegato come risolvere i
 problemi che ciascuno step potrebbe porre.
 
-### Creare di un cluster
+### Creare un cluster
 
 Il tutorial invita a creare il cluster con il comando `zato
 quickstart create`. Rispetto al tutorial, io l'ho lanciato in questo modo:
