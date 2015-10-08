@@ -22,11 +22,11 @@ un DBMS SQL e un data store [Redis](http://redis.io/).
 
 Viene supportata anche la comunicazione asincrona mediante code, in particolare
 attraverso dei connettori compatibili con alcune delle tecnologie principali per
-le code (es. [AMQP](https://www.amqp.org/)) e l’uso di Redis come message
+le code (es. [AMQP](https://www.amqp.org/)) e l'uso di Redis come message
 broker.
 
-[Questo articolo](https://zato.io/docs/intro/overview-tech.html) è un’ottima
-introduzione all’architettura di Zato e contiene link ad articoli altrettanto
+[Questo articolo](https://zato.io/docs/intro/overview-tech.html) è un'ottima
+introduzione all'architettura di Zato e contiene link ad articoli altrettanto
 utili sulle singole componenti.
 
 ## Installazione
