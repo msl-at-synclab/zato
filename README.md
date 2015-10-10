@@ -78,19 +78,19 @@ non fa sicurezza).
 
 Alla fine, anche se non si passa una password a `zato
 quickstart create`, ci penserà il comando stesso a chiederla interattivamente.
-Perciò _bisogna_ configurare Redis per richiedere la stessa password:
+Perciò _bisogna_ configurare Redis per richiedere la stessa password. Aprire
+quindi il file `redis.conf` nella cartella in cui è installato Redis e togliere
+il commento sulla riga che inizia con la parola `requirepass`. Sulla stessa
+riga potete anche indicare la password sostituendola a quella di default
+(`foobared`). Riavviare poi il server Redis indicando il file di
+configurazione:
 
 ``` bash
-redis-cli
-config set requirepass "mia indecifrabilissima password"
+redis-server /cartella/di/redis/redis.conf
 ```
 
-**Nota:** Questi comandi invece vanno dati dall'utente "regolare" del sistema,
+**Nota:** Questo comando invece va dato dall'utente "regolare" del sistema,
 non dall'utete `zato`.
-
-**Nota:** Ufficialmente la configurazione di Redis si può fare anche tramite il
-file `redis.conf`, ma poi al riavvio viene ignorata. Sto investigando su come
-risolvere la cosa.
 
 ### Verificare la configurazione del cluster
 
